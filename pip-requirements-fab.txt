@@ -1,1 +1,11 @@
-/home/chris/git/dryden-portal-2/roles/all/pip-requirements-fab.txt
+# DO NOT MANUALLY INSTALL PACKAGES USING THIS FILE.
+# AFTER MODIFYING THIS FILE, RUN: fab dp.update_requirements; ./init_virtualenv.sh
+
+# Any dependencies needed by Fabric or the sysadmin tool.
+Fabric==1.13.1
+#TODO:remove once burlap version stable
+#burlap
+-e git://github.com/chrisspen/burlap.git#egg=burlap
+
+# Needed by DP satchel.
+google-api-python-client==1.6.2

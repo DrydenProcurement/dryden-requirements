@@ -1,1 +1,18 @@
-/home/chris/git/dryden-portal-2/roles/all/pip-requirements-test.txt
+# DO NOT MANUALLY INSTALL PACKAGES USING THIS FILE.
+# AFTER MODIFYING THIS FILE, RUN: fab dp.update_requirements; ./init_virtualenv.sh
+#Throws exception?
+#https://github.com/PyCQA/pylint/issues/1318
+pylint==1.7.1
+autopep8==1.1.1
+selenium==3.4.3
+jira==1.0.9
+# Needed by Buildbot's JiraStatusPush.
+txrequests==0.9.5
+PyVirtualDisplay==0.2.1
+buildbot==0.9.5
+buildbot-console-view==0.9.5
+buildbot-waterfall-view==0.9.5
+buildbot-worker==0.9.5
+buildbot-www==0.9.5
+pipdeptree==0.10.1
+service_identity==17.0.0
